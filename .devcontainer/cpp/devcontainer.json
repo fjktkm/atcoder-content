@@ -1,0 +1,14 @@
+{
+	"name": "C++",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"formulahendry.code-runner",
+				"ms-vscode.cpptools-extension-pack"
+			]
+		}
+	}
+}

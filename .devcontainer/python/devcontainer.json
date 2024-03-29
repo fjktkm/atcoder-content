@@ -1,0 +1,13 @@
+{
+	"name": "Python",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"formulahendry.code-runner",
+				"ms-python.python",
+				"ms-python.black-formatter"
+			]
+		}
+	}
+}

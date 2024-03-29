@@ -1,0 +1,11 @@
+{
+	"name": "Haskell",
+	"image": "haskell:latest",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"formulahendry.code-runner"
+			]
+		}
+	}
+}
