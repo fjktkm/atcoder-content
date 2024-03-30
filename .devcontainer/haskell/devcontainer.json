@@ -1,6 +1,8 @@
 {
 	"name": "Haskell",
-	"image": "haskell:latest",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
