@@ -7,5 +7,6 @@
 				"formulahendry.code-runner"
 			]
 		}
-	}
+	},
+	"postCreateCommand": "cargo install rust-script"
 }

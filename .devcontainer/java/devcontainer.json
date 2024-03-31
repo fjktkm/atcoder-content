@@ -4,7 +4,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"formulahendry.code-runner"
+				"formulahendry.code-runner",
+				"vscjava.vscode-java-pack"
 			]
 		}
 	}
