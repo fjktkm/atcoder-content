@@ -5,5 +5,8 @@
 **/java/*.class
 **/java/tempCodeRunnerFile.java
 
+# Python
+**/python/tempCodeRunnerFile.py
+
 # Rust
 **/rust/target
