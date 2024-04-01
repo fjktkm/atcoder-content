@@ -1,2 +1,9 @@
+# C++
+**/cpp/main
+
+# Java
+**/java/*.class
+**/java/tempCodeRunnerFile.java
+
+# Rust
 **/rust/target
-**/main
