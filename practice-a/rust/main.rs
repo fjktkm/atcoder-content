@@ -14,6 +14,6 @@ fn main() {
         c: i32,
         s: String,
     }
-    
+
     println!("{} {}", a + b + c, s);
 }
