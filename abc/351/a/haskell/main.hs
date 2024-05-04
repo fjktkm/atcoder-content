@@ -1,8 +1,5 @@
 solve :: [Int] -> [Int] -> Int
-solve takahashiScore aokiScore = 
-  let takahashiTotal = sum takahashiScore
-      aokiTotal = sum aokiScore
-  in takahashiTotal - aokiTotal + 1
+solve fst snd = sum fst - sum snd + 1
 
 main :: IO ()
 main = do
