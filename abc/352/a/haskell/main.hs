@@ -1,8 +1,5 @@
 solve :: Int -> Int -> Int -> Bool
-solve from to target
-  | from <= target && target <= to = True
-  | to <= target && target <= from = True
-  | otherwise = False
+solve from to target = min from to <= target && target <= max from to
 
 main :: IO ()
 main = do
