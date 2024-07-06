@@ -7,8 +7,14 @@
 		"vscode": {
 			"extensions": [
 				"formulahendry.code-runner",
-				"mogeko.haskell-extension-pack"
-			]
+				"haskell.haskell",
+				"ms-azuretools.vscode-docker"
+			],
+			"settings": {
+				"[haskell]": {
+					"editor.tabSize": 2
+				}
+			}
 		}
 	}
 }
