@@ -1,16 +1,14 @@
 import Control.Monad
-import Data.List
 
 main :: IO ()
 main = do
   n <- readLn :: IO Int
-  pairs <- replicateM n $ do
-    [a, b] <- map read . words <$> getLine :: IO [Int]
-    return (a, b)
+  (l, r) <- unzip . map ((\[a, b] -> (a, b)) . map read . words) <$> replicateM n getLine
+  putStrLn $
+    if sum l > 0 || sum r < 0
+      then "No"
+      else "Yes\n" ++ unwords (map show $ distribute l r $ -sum l)
 
-  let seqs = foldM (\seq (a, b) -> [seq ++ [x] | x <- [a .. b]]) [] pairs
-  let validSeq = find (\seq -> sum seq == 0) seqs
-
-  putStrLn $ case validSeq of
-    Nothing -> "No"
-    Just seq -> "Yes\n" ++ unwords (map show seq)
+distribute :: [Int] -> [Int] -> Int -> [Int]
+distribute ls _ 0 = ls
+distribute (l : ls) (r : rs) total = let sub = min (r - l) total in l + sub : distribute ls rs (total - sub)
