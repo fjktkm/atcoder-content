@@ -1,5 +1,3 @@
-import Data.List
-
 main = do
   n <- readLn :: IO Int
   print $ palindromeNumber $ findSublistIndex 1 n
